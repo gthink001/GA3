@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-=5r^yn5(!g-=qhy3%32vdq(f=azvw6))06ww@qr3om8u@qd0-$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS =  ['*', 'Ga-env.eba-p8ebfmrm.ap-south-1.elasticbeanstalk.com']
 
 
 # Application definition
@@ -75,14 +75,20 @@ WSGI_APPLICATION = 'smart_home.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': 'zpamqlvg65!G',
-        'HOST': 'database-1.cpiiypusrsra.ap-south-1.rds.amazonaws.com',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'postgres',
+#         'USER': 'postgres',
+#         'PASSWORD': 'zpamqlvg65!G',
+#         'HOST': 'database-1.cpiiypusrsra.ap-south-1.rds.amazonaws.com',
+#         'PORT': '5432',
+#     }
+# }
 
 
 # Password validation
