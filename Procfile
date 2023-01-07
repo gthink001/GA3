@@ -1,1 +1,1 @@
-web: gunicorn G_Think.wsgi --log-file -
+web: gunicorn smart_home.wsgi --log-file -
