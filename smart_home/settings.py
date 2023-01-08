@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'accounts',
     'corsheaders',
+    'oidc_provider',
 ]
 
 MIDDLEWARE = [
@@ -75,8 +76,15 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'smart_home.wsgi.application'
+# OIDC_KEY = Path(str(BASE_DIR) + "/oidc.key").read_text()
+# OAUTH2_PROVIDER = {
+#     "OIDC_ENABLED": True,
+#     "OIDC_RSA_PRIVATE_KEY": OIDC_KEY,
+#     "SCOPES": {"all": "all scopes"},
+# }
 
 
+LOGIN_URL = "/admin/login/"
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
