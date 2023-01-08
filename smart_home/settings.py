@@ -147,7 +147,7 @@ USE_L10N = True
 
 USE_TZ = False
 
-
+SESSION_COOKIE_SECURE = False
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 STATIC_URL = '/static/'
