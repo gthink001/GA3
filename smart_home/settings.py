@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'accounts',
     'corsheaders',
-    'oidc_provider',
+     #  'oidc_provider',
 ]
 
 MIDDLEWARE = [
@@ -100,7 +100,7 @@ DATABASES = {
         'NAME': 'postgres',
         'USER': 'postgres',
         'PASSWORD': 'lalith65!G',
-        'HOST': 'database-01.cpiiypusrsra.ap-south-1.rds.amazonaws.com',
+        'HOST': 'database-1.cpiiypusrsra.ap-south-1.rds.amazonaws.com',
         'PORT': '5432',
     }
 }

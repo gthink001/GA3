@@ -20,5 +20,5 @@ urlpatterns = [
     path('', include('accounts.urls')),
     path('admin/', admin.site.urls),
     path('o/', include('oauth2_provider.urls', namespace='oauth2_provider')),
-    url(r'^openid/', include('oidc_provider.urls', namespace='oidc_provider')),
+    # url(r'^openid/', include('oidc_provider.urls', namespace='oidc_provider')),
 ]
